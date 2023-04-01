@@ -1,0 +1,13 @@
+.boton {
+    width: 200px;
+    height: 50px;
+    background-color: lightcyan;
+    text-align: center;
+    color: black;
+}
+
+.botonLimpiar {
+    @extend .boton;
+    background-color: darkcyan;
+    color: white;
+}

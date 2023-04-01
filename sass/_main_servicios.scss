@@ -1,0 +1,14 @@
+.formulario {
+    border: 2px solid white;
+    width: 60%;
+    padding: 50px;
+    font-family: $tipografia-general;
+    font-size: $fuente-textos;
+    font-weight: map-get($fuentes-grosor, medium);  
+}
+
+.containerServicios {
+    width: 60%;
+    height: auto;
+    padding: 0;   
+}

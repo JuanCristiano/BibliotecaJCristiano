@@ -1,0 +1,116 @@
+.containerContacto{
+    @include flexible (center, center);
+    position:relative;
+    width: 100%;
+    height: 100%;       
+    padding: 20px 100px;
+}
+.containerContacto::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.654), rgba(0, 0, 0, 0.66)),url(../assets/img/galeria8\ \(8\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:blur(50px);
+    z-index: -1;
+    background-color: $color-primero;
+}
+.contact-box{
+    max-width: 850px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $color-primero;
+    box-shadow: 0px 0px 19px 5px rgba( 0, 0, 0, 0.19 );
+
+}
+.left{
+    background: url(../assets/img/galeria8\ \(8\).jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+.right{
+    padding: 25px 40px;
+}
+
+.textosPequeños {
+    font-family: $tipografia-general;
+    font-size: $fuente-pequeña;
+}
+
+h2{
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;    
+
+}
+.field{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.184);
+    outline:none;
+    background-color: $color-tercero;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.field:hover{
+    background-color: rgba(0,0,0,0.1);
+
+}
+textarea{
+    min-height: 150px;
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: $color-segundo;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: $color-segundo;
+}
+.field:focus{
+    border: 2px solid $color-segundo;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+ 
+  .containerContacto{
+   
+    padding: 20px;  
+  }
+ 
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        background-size: cover;
+        height: 100%;
+    }
+    .right{
+        padding: 25px 20px;
+    }
+}

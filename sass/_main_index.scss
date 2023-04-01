@@ -1,0 +1,91 @@
+.buscador {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/galeria1\ \(4\).jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid $color-separador;
+}
+
+.contenedorId {
+    @include flexible (center, space-evenly);
+    width: 13%;
+    height: 15vh;    
+    line-height: 2rem;
+    padding: 10px 10px;
+    flex-direction: column;
+    width: auto;
+        i {
+            color: #A5C9CA;
+        }
+        a {
+            font-family: $tipografia-general;
+            font-size: $fuente-textos;
+            font-weight: map-get($fuentes-grosor, bold);
+            text-decoration: none;
+            color: #A5C9CA;
+            margin: 10px;
+        }
+}
+
+.iconosUno {
+    max-width: 100%;
+    height: auto;
+    width: 20%
+}
+
+.textoBuscador {
+    color: #fbf7f5;
+    font-size: 1.3rem;
+    font-family: $tipografia-general;
+    font-weight: map-get($fuentes-grosor, bold);
+    text-align: center;
+    h1{
+        padding: 10px 10px;
+        font-weight: map-get($fuentes-grosor, bold);
+    }     
+    p {
+            padding: 10px 10px;
+    }                    
+}
+
+.contenedorPrincipal {
+    @include flexible (center, center);
+    width: 100%;
+    height: auto;
+    padding: 25px;    
+    flex-wrap: wrap;    
+    background-color: $color-segundo;
+}
+
+.textosGeneral {
+    font-family: $tipografia-general;
+    font-size: $fuente-textos;
+    font-weight: map-get($fuentes-grosor, medium);
+    color: white;
+    width: 100%;
+        h1 {
+            font-weight: map-get($fuentes-grosor, bold);
+        }
+}
+
+.alineacionTexto {
+    text-align: center;
+}
+
+ .estiloCard {
+    @include flexible (center, center);
+    background-color: $color-primero;
+ }
+
+ .imgNovedades {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;    
+}
+
+
+

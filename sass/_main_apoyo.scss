@@ -1,0 +1,64 @@
+.borde {
+    border-bottom: 4px solid #A5C9CA;
+}
+
+.columnaRecursosE {
+    display: flex;    
+    width: 60%;
+    height: auto;
+}
+
+.alineacionTexto {
+    text-align: center;
+}
+
+.textosSecundarios {
+    font-family: $tipografia-general;
+    font-size: $fuente-textos;
+    color: white;   
+}
+
+.fondo2 {
+    background-color: $color-segundo;
+}
+
+.fondo3 {
+    background-color: $color-tercero;
+} 
+
+.contenedorDos {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+li button{
+           
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+    background-color:#ffffff;
+    /*font-size: 20px;*/
+    margin: 20px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 2%;
+
+}
+
+li button::before,
+li button::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.buttonDos {
+    width: auto;
+    height: 35px;
+}
+
+.buttonDos:hover {
+    background: $color-tercero;
+    box-shadow: 0 0 5px #395b64, 0 0 25px #a5c9ca, 0 0 50px #a5c9ca, 0 0 200px #a5c9ca;
+}
