@@ -1,6 +1,5 @@
 # BibliotecaJCristiano
-Tercera PreEntrega Coder
-Hola, estan todas las paginas estiladas. 
-no pude resolver algunos problemas de compatibilidad con la galeria.
-
-Saludos
+Entrega final de Juan Gabriel Cristiano.
+Gracias profe y tutores por el aprendizaje impartido.
+Espero esta humilde pagina cumpla con los requisitos solicitados.
+Saludos,
