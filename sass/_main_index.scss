@@ -10,6 +10,15 @@
     border-bottom: 4px solid $color-separador;
 }
 
+.buttonBuscar {
+    width: 300px;
+    background-color: #A5C9CA;
+    border: 3px outset #a5c9ca;
+    font-family: $tipografia-general;
+    font-size: $fuente-titulos;
+    color: white;      
+}
+
 .contenedorId {
     @include flexible (center, space-evenly);
     width: 13%;
@@ -74,6 +83,7 @@
 
 .alineacionTexto {
     text-align: center;
+    margin: 20px;
 }
 
  .estiloCard {
@@ -87,5 +97,20 @@
     object-fit: cover;    
 }
 
+@media screen and (max-width: 768px) {
+    .buscador {
+        flex-direction: column;
+        height: auto;
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
 
+    .contenedorPrincipal{
+        padding: 10px;
+    }
+
+    .alineacionTexto {
+        margin-top: 10px;
+    }
+}
 

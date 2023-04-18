@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Biblioteca Universitaria</title>
+        <meta name="description" content="En esta pagina de la Biblioteca conoceras todos los servicios a los que podras acceder como usuario registrado de la Biblioteca">
+        <meta name="keywords" content="Prestamo, Prestamo interbibliotecario, Donaciones, Catalogo desiderata, Asociarse, Tiempo de prestamo">
+        <title>Servicios - Biblioteca</title>        
         <!--FAVICON-->
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/bootstrap.css">
@@ -51,7 +53,7 @@
                 <h1>Servicios</h1>
                 </div>
             </div>            
-            <div class="container-fluid contenedorPrincipal borde">
+            <div class="container-fluid contenedorPrincipal fondoConocenosInvertido borde">
                 <div class="textosGeneral alineacionTexto">
                     <h2>Prestamo de material</h2>
                     <p> A través de este servicio, la Biblioteca te permite disponer de sus fondos bibliográficos, tanto para su uso en
@@ -72,10 +74,10 @@
                     <p>La Biblioteca reconoce las siguientes modalidades de préstamos a los usuarios:</p>
                     <div class="containerServicios mx-auto">
                         <ul class="list-group mt-2">
-                                <li class="list-group-item">Préstamo en Sala de Lectura con estantería abierta.</li>
-                                <li class="list-group-item">Préstamo domiciliario.</li>
-                                <li class="list-group-item">Préstamo Interbibliotecario.</li>
-                            </ul>
+                            <li class="list-group-item">Préstamo en Sala de Lectura con estantería abierta.</li>
+                            <li class="list-group-item">Préstamo domiciliario.</li>
+                            <li class="list-group-item">Préstamo Interbibliotecario.</li>
+                        </ul>
                     </div>
                     <br>          
                     <p>Con la finalidad de propiciar la accesibilidad al fondo bibliográfico por parte de toda la comunidad del Instituto
@@ -89,106 +91,134 @@
                     </div>                     
                 </div>
             </div>
-            <div class="container-fluid contenedorPrincipal borde">
-                <div class="textosGeneral alineacionTexto">
-                    <h2>Catálogo desiderata</h2>
-                    <p>Este servicio se encarga de la gestión de la compra de todo el material bibliográfico. Todo miembro de la
-                    comunidad académica puede sugerir la compra de una obra que considere de importancia y que no se
-                    encuentre en la Biblioteca, o bien la adquisición de más ejemplares de una obra ya presente en nuestros
-                    acervo.</p>
-                    <p>Mediante el siguiente formulario puede sugerir la compra de material para la Biblioteca. Todos los pedidos de
-                    compra, serán evaluados de acuerdo a su idoneidad y disponibilidad presupuestaria.</p>
-                    <h3>Material a solicitar</h3>                       
-                    <div class="container-fluid mt-2 p-3 contenedorPrincipal formulario">
-                        <form class="row g-3">
-                            <div class="col-sm-12 col-md-6">
-                                <label for="Titulo" class="col-sm-2 col-form-label col-form-label-sm">Titulo de la obra</label>                            
-                                <input type="text" placeholder="titulo principal" name="nombre" id="nombre" required>
+            <div class="container-fluid contenedorPrincipal fondoConocenos borde">
+                <div class="row textosGeneral lh-lg">
+                    <div class="col-12 col-md-6 alineacionTextoDos">
+                        <h2>Catálogo desiderata</h2>
+                        <p>Este servicio se encarga de la gestión de compra de todo el material bibliográfico. Todo miembro de la
+                        comunidad académica puede sugerir la compra de una obra que considere de importancia y que no se
+                        encuentre en la Biblioteca, o bien la adquisición de más ejemplares de una obra ya presente en nuestros
+                        acervo.</p>
+                        <p>Mediante el siguiente formulario puede sugerir la compra de material para la Biblioteca. Todos los pedidos de
+                        compra, serán evaluados de acuerdo a su idoneidad y disponibilidad presupuestaria.</p>
+                    </div>
+                    <div class="col-12 col-md-6 formulario">
+                        <form action="./error404.html">
+                            <div class="row mb-3 mt-3">
+                              <label for="inputautor" class="col-sm-2 col-form-label">Autor</label>
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputautor" required>
+                              </div>
                             </div>
-                            <div class="col-sm-12 col-md-6">
-                                <label for="Autor" class="col-sm-2 col-form-label col-form-label-sm">Autor</label>
-                                <input type="text" placeholder="autor principal" name="autor" id="autor" required>
+                            <div class="row mb-3">
+                              <label for="inputtitulo" class="col-sm-2 col-form-label">Titulo</label>
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputtitulo" required>
+                              </div>
                             </div>
-                            <div class="col-sm-12 col-md-6">
-                                <label for="material" class="col-sm-2 col-form-label col-form-label-sm">Tipo de material</label>
-                                <input type="text" placeholder="tipo de material" name="autor" id="autor" required>
+                            <div class="row mb-3">
+                                <label for="inputusuario" class="col-sm-2 col-form-label">Usuario</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="inputusuario" required>
+                                </div>
+                              </div>
+                            <fieldset class="row mb-3">
+                              <legend class="col-form-label col-sm-2 pt-0">Formato</legend>
+                              <div class="col-sm-10">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                                  <label class="form-check-label" for="gridRadios1">
+                                    Monografia
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                  <label class="form-check-label" for="gridRadios2">
+                                    Publicacion Periodica
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                  <label class="form-check-label" for="gridRadios3">
+                                    Material digital
+                                  </label>
+                                </div>
+                              </div>
+                            </fieldset>
+                            <div class="row mb-3">
+                                <div class="col-12 col-md-6">
+                                    <button type="submit" class="buttonDos textosGeneral fondo2 ps-2 pe-2 mb-2">Enviar</button>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <button type="reset" class="buttonDos textosGeneral fondo2 ps-2 pe-2 mb-2">Limpiar</button>
+                              </div>
                             </div>
-                            <div class="col-sm-12 col-md-6">
-                                <label for="nombre y apellido" class="col-sm-2 col-form-label col-form-label-sm">Nombre y apellido</label>
-                                <input type="text" placeholder="nombre y apellido personal" name="autor" id="autor" required>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <input type="submit" value="Enviar consulta"></input>
-                            </div> 
-                            <div class="col-sm-12 col-md-6">
-                                <input type="reset" value="Limpiar consulta"></input>   
-                            </div>            
                         </form>
                     </div>
                 </div>
             </div>          
-            <div class="container-fluid contenedorPrincipal">
-                <div class="textosGeneral alineacionTexto mx-auto">                  
-                    <h2>Donaciones</h2>
-                    <p>¿Cómo hacer una donación? Antes de efectuar una donación, deberá ponerse en contacto con la Biblioteca a través de alguno de sus
-                    canales de comunicación.</p> 
-                    <p>Deberá informar:</p>
-                    <div class="containerServicios mx-auto">
-                        <ul class="list-group mt-2">
-                            <li class="list-group-item">Cantidad de volúmenes a donar</li>
-                            <li class="list-group-item">Presentar información mínima sobre los documentos (título, autor, temática)</li>
-                        </ul>
-                    </div>                
-                </div>
-            </div>
-            <div class="container-fluid contenedorPrincipal borde">
-                <div class="textosGeneral alineacionTexto formulario mx-auto">  
-                    <form class="row g-3">
-                        <div class="col-sm-12 col-md-6">
-                            <label for="inputEmail4" class="form-label">Correo electronico</label>
-                            <input type="email" class="form-control" id="inputEmail4">
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <label for="inputPassword4" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="inputPassword4">
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <label for="inputAddress" class="form-label">Direccion</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Direccion">
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <label for="inputAddress2" class="form-label">Carrera que cursa</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Carrera actual">
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <label for="inputCity" class="form-label">Ciudad</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <label for="inputState" class="form-label">Tipo de usuario</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccione uno</option>
-                                <option value="1">Alumno</option>
-                                <option value="2">Profesor</option>
-                                <option value="3">Investigador</option>
-                                <option value="4">Administrativo</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-12 col-md-2">
-                            <label for="carnet" class="form-label">Nº carnet</label>
-                            <input type="text" class="form-control" id="carnetuser">
-                        </div> 
-                        <div class="col-12">
-                            <label for="comentario" class="form-label">Comentario</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Comentario">
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <input type="submit" value="Enviar consulta">
-                        </div> 
-                        <div class="col-sm-12 col-md-6">
-                            <input type="reset" value="Limpiar consulta">   
-                        </div>
-                    </form>
+            <div class="container-fluid contenedorPrincipal borde fondoConocenos">
+                <div class="row textosGeneral lh-lg">
+                    <div class="col-12 col-md-6 alineacionTextoDos">               
+                        <h2>Donaciones</h2>
+                        <p>¿Cómo hacer una donación? Antes de efectuar una donación, deberá ponerse en contacto con la Biblioteca a través de alguno de sus
+                        canales de comunicación.</p> 
+                        <p>Deberá informar:</p>
+                        <div class="containerServicios">
+                            <ul class="list-group mt-2">
+                                <li class="list-group-item">Cantidad de volúmenes a donar</li>
+                                <li class="list-group-item">Presentar información mínima sobre los documentos (título, autor, temática)</li>
+                            </ul>
+                        </div>                
+                    </div>
+                    <div class="col-12 col-md-6 formulario">    
+                        <form action="./error404.html" class="row g-2">
+                            <div class="col-12 col-md-6">
+                                <label for="inputEmail4" class="form-label">Correo electronico</label>
+                                <input type="email" class="form-control" id="inputEmail4" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="inputPassword4" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="inputPassword4" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Direccion</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Direccion" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="inputAddress2" class="form-label">Carrera que cursa</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Carrera actual" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="inputCity" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="inputState" class="form-label">Tipo de usuario</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccione uno</option>
+                                    <option value="1">Alumno</option>
+                                    <option value="2">Profesor</option>
+                                    <option value="3">Investigador</option>
+                                    <option value="4">Administrativo</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="carnet" class="form-label">Nº carnet</label>
+                                <input type="text" class="form-control" id="carnetuser">
+                            </div> 
+                            <div class="col-12">
+                                <label for="comentario" class="form-label">Comentario</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Comentario">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input class="buttonDos textosGeneral fondo2 ps-3 pe-3 mb-2 mt-2" type="submit" value="Enviar consulta">
+                            </div> 
+                            <div class="col-12 col-md-6">
+                                <input class="buttonDos textosGeneral fondo2 ps-3 pe-3 mb-2 mt-2" type="reset" value="Limpiar consulta">   
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </main>
@@ -219,11 +249,4 @@
           <!--FIN DEL FOOTER-->
           <script src="../js/bootstrap.bundle.min.js"></script>   
       </body>   
-  </html>          
-      
-        
-
-
-
-
-        
+  </html>

@@ -2,12 +2,6 @@
     border-bottom: 4px solid #A5C9CA;
 }
 
-.columnaRecursosE {
-    display: flex;    
-    width: 60%;
-    height: auto;
-}
-
 .alineacionTexto {
     text-align: center;
 }
@@ -55,10 +49,27 @@ li button::after{
 
 .buttonDos {
     width: auto;
-    height: 35px;
+    height: auto;
 }
 
 .buttonDos:hover {
     background: $color-tercero;
     box-shadow: 0 0 5px #395b64, 0 0 25px #a5c9ca, 0 0 50px #a5c9ca, 0 0 200px #a5c9ca;
+}
+
+.contenedorVideo {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 30px; 
+    height: 0;
+    overflow: hidden;
+    
+}
+
+.contenedorVideo iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }

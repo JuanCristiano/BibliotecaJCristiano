@@ -1,14 +1,43 @@
+.fondoConocenosInvertido {
+    background-image: url(../assets/img/fondoConocenos2.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
 .formulario {
     border: 2px solid white;
-    width: 60%;
-    padding: 50px;
+    width: 50%;
+    padding: 20px;
     font-family: $tipografia-general;
     font-size: $fuente-textos;
     font-weight: map-get($fuentes-grosor, medium);  
 }
 
 .containerServicios {
-    width: 60%;
+    width: 70%;
     height: auto;
-    padding: 0;   
+    margin-bottom: 10px;   
 }
+
+.alineacionTextoDos {
+    text-align:start;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px){ 
+    .formulario {
+        width: 100%;
+    }
+     
+    .containerServicios{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .alineacionTextoDos {
+        text-align:center;
+        margin-top: 10px;
+    }
+}
+
+
